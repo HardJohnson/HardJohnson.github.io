@@ -4,6 +4,9 @@ const password = document.querySelector("#login-form #password");
 const submit = document.querySelector('#login-form #submit');
 const footer = document.querySelector('#left_footer');
 const lifeQuotes = document.querySelector('#header span');
+const localImage = document.querySelector('#main img');
+const localWeather = document.querySelector('#local_weather');
+const toDoBorder = document.querySelector('#todo_border');
 
 const HIDDEN_CLASSNAME = "hidden";
 const USERID_KEY = "userid";
@@ -20,6 +23,9 @@ function onLoginSubmit(event) {
   localStorage.setItem(USERPASSWORD_KEY, userPassword);
   footer.classList.remove(HIDDEN_CLASSNAME);
   lifeQuotes.classList.remove(HIDDEN_CLASSNAME);
+  localImage.classList.remove(HIDDEN_CLASSNAME);
+  localWeather.classList.remove(HIDDEN_CLASSNAME);
+  toDoBorder.classList.remove(HIDDEN_CLASSNAME);
 }
 
 const savedUserId = localStorage.getItem(USERID_KEY);
@@ -31,4 +37,6 @@ if (savedUserId === null && savedUserPassword === null) {
 } else {
   footer.classList.remove(HIDDEN_CLASSNAME);
   lifeQuotes.classList.remove(HIDDEN_CLASSNAME);
+  localImage.classList.remove(HIDDEN_CLASSNAME);
+  toDoBorder.classList.remove(HIDDEN_CLASSNAME);
 }
