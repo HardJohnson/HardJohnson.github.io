@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World's Strongest Hamburger</title>
+  <link rel="icon" href="./img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <h2 id="clock"></h2>
+      <span id="quotes" class="hidden"></span>
+    </div>
+    <img id="local_img" src="./img/location-pointer.png">
+    <div id="local_weather">
+      <span></span><br>
+      <span></span>
+    </div>
+    <div id="todo_border">
+      <form id="todo_form">
+        <img src="./img/favicon.png">
+        <p>Today's Work</p>
+        <input type="text" placeholder="Write a Today's Work">
+      </form>
+      <ul id="todo_list"></ul>
+    </div>
+    <form id="login-form" class="hidden">
+      <input id="id" required maxlength="15" type="text" placeholder="What is your Id?"><br>
+      <input id="password" required maxlength="22" type="password" placeholder="What is your Password?"><br>
+      <input id="submit" type="submit" value="Log In">
+    </form>
+    <div id="left_footer" class="hidden">
+      <span>My Favorite Youtube</span>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/1eiU6zauAtQ" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+  <script src="./js/todo.js"></script>
+  <script src="./js/background.js"></script>
+  <script src="./js/colck.js"></script>
+  <script src="./js/quotes.js"></script>
+  <script src="./js/greetings.js"></script>
+  <script src="./js/weather.js"></script>
+</body>
+
+</html>
